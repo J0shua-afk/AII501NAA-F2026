@@ -1,0 +1,14 @@
+From: Alex Chen <alex.chen@mailbox.example>
+To: you@student.example
+Subject: Notes from today's lecture
+Date: Mon, 28 Sep 2026 09:01:00 -0400
+Message-ID: <demo01@mail.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hi,
+
+Here are my notes from today's lecture on uninformed search. The part about
+breadth-first search starts on page 3. See you in the lab on Friday.
+
+Alex

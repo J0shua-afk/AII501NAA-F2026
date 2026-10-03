@@ -1,0 +1,15 @@
+From: tester@fixtures.example
+Subject: alternative
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="ALT"
+
+--ALT
+Content-Type: text/plain; charset="utf-8"
+
+PLAINMARKER free
+
+--ALT
+Content-Type: text/html; charset="utf-8"
+
+<p>HTMLMARKER <b>free</b></p>
+--ALT--

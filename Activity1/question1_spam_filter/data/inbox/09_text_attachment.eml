@@ -1,0 +1,29 @@
+From: Morgan Diaz <morgan@mailbox.example>
+To: you@student.example
+Subject: The file you asked for
+Date: Mon, 28 Sep 2026 09:09:00 -0400
+Message-ID: <demo09@mail.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BOUNDARY-09"
+
+This is a multi-part message in MIME format.
+
+--BOUNDARY-09
+Content-Type: text/plain; charset="utf-8"
+
+Hi, the details are in the attached text file.
+
+--BOUNDARY-09
+Content-Type: text/plain; charset="utf-8"; name="details.txt"
+Content-Disposition: attachment; filename="details.txt"
+
+Earn cash fast: bonus credit, a loan with no checks, a crypto investment
+and a guaranteed refund.
+
+--BOUNDARY-09
+Content-Type: image/png; name="logo.png"
+Content-Disposition: attachment; filename="logo.png"
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==
+--BOUNDARY-09--

@@ -1,0 +1,33 @@
+# Bad-word list: words that are likely to appear in spam.
+# One word per line; case does not matter.
+free
+winner
+win
+cash
+prize
+money
+urgent
+offer
+discount
+cheap
+guaranteed
+lottery
+bonus
+claim
+congratulations
+million
+credit
+loan
+investment
+bitcoin
+crypto
+inheritance
+refund
+exclusive
+limited
+casino
+pills
+verify
+password
+click
+deal

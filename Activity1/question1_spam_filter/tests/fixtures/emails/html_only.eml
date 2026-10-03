@@ -1,0 +1,8 @@
+From: tester@fixtures.example
+Subject: html only
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><head><style>.STYLEMARKER { color: red }</style>
+<script>var SCRIPTMARKER = 1;</script></head>
+<body><p>Visible&nbsp;<b>VISIBLEMARKER</b> &amp; more</p></body></html>

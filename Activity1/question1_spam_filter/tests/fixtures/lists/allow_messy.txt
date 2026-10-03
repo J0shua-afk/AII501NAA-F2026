@@ -1,0 +1,11 @@
+# Test allow list with the formatting variations the loader must handle
+
+Example.COM
+example.com
+  spaced.example
+@at-prefix.example
+*.wildcard.example
+trailing-dot.example.
+inline.example   # a trailing comment
+not a domain
+bad..dots.example

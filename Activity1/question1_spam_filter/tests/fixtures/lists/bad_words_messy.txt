@@ -1,0 +1,8 @@
+# Test bad-word list
+FREE
+free
+Cash!
+  prize
+click here
+$$$
+winner  # trailing comment

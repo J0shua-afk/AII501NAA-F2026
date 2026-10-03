@@ -1,0 +1,8 @@
+From: tester@fixtures.example
+Subject: quoted-printable
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+This word is fr=
+ee and costs =243 only=21

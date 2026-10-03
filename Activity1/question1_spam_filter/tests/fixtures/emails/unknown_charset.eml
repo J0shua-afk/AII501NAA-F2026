@@ -1,0 +1,6 @@
+From: tester@fixtures.example
+Subject: odd charset
+MIME-Version: 1.0
+Content-Type: text/plain; charset="x-imaginary-charset"
+
+Readable CHARSETMARKER text

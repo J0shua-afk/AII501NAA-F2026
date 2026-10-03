@@ -1,0 +1,6 @@
+# Allow list: mail FROM these domains is always delivered (non-spam),
+# whatever it contains. One domain per line. Sub-domains are included,
+# so helpdesk.employer.example counts as employer.example.
+university.example
+employer.example
+family.example

@@ -1,0 +1,23 @@
+From: Campus Events <events@student-club.example>
+To: you@student.example
+Subject: Games night
+Date: Mon, 28 Sep 2026 09:10:00 -0400
+Message-ID: <demo10@mail.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="ALT-10"
+
+--ALT-10
+Content-Type: text/plain; charset="utf-8"
+
+Games night is free for members. Win a prize in the trivia round, and
+there's a discount on snacks. Use the link to RSVP.
+
+--ALT-10
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Games night is <b>free</b> for members. Win a <i>prize</i> in the trivia
+round, and there's a discount on snacks. Use the
+<a href="https://events.example/rsvp">link</a> to RSVP.</p>
+</body></html>
+--ALT-10--

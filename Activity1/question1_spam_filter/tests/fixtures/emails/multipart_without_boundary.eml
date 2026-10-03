@@ -1,0 +1,6 @@
+From: tester@fixtures.example
+Subject: broken multipart
+MIME-Version: 1.0
+Content-Type: multipart/mixed
+
+Lonely text NOBOUNDARYMARKER free

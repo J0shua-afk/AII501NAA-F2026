@@ -1,0 +1,18 @@
+From: tester@fixtures.example
+Subject: Fwd: something
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="OUTER"
+
+--OUTER
+Content-Type: text/plain; charset="utf-8"
+
+See the forwarded message below.
+
+--OUTER
+Content-Type: message/rfc822
+
+From: original@elsewhere.example
+Subject: inner
+
+Inner body INNERMARKER here.
+--OUTER--

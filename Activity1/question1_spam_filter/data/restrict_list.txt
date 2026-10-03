@@ -1,0 +1,5 @@
+# Restrict list: mail FROM these domains is always spam,
+# whatever it contains. One domain per line. Sub-domains are included.
+spammer.test
+cheap-deals.test
+prize-center.test

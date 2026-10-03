@@ -1,0 +1,24 @@
+From: tester@fixtures.example
+Subject: attachments
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="MIXED"
+
+--MIXED
+Content-Type: text/plain; charset="utf-8"
+
+Body text BODYMARKER here.
+
+--MIXED
+Content-Type: text/plain; name="notes.txt"
+Content-Disposition: attachment; filename="notes.txt"
+
+Attachment text ATTACHMARKER here.
+
+--MIXED
+Content-Type: application/pdf; name="report.pdf"
+Content-Disposition: attachment; filename="report.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQgUERGTUFSS0VSIGZyZWUgY2FzaCBwcml6ZSBsb3R0ZXJ5IGJvbnVzIHdpbm5lcg==
+
+--MIXED--

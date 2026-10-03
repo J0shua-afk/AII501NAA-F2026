@@ -4,8 +4,7 @@
 Two Python programs for Activity 1:
 
 1. **Question 1 – Spam Filter Email Agent.** A *simple reflex agent* that reads `.eml` email files and files each one into a `spam/` or an `email/` directory, using an allow list, a restrict list and a bad-word list.
-2. **Question 2 – Three-Jug Search Problem.** The 12/8/3-gallon jug problem formulated as a search problem and solved with breadth-first search, implemented as in AIMA Figure 3.9.
-
+2. **Question 2 – Three-Jug Search Problem.** The 12/8/3-gallon jug problem formulated as a search problem and solved with breadth-first search.
 **The written answers** (PEAS, environment properties, agent type, state space, heuristic, completeness) are in **[ANSWERS.md](ANSWERS.md)**.
 
 ## Contents

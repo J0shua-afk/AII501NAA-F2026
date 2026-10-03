@@ -1,7 +1,4 @@
-"""Run the test suites of both questions with one command:  python run_all_tests.py
-
-Each question is a self-contained folder, so each suite runs from inside its own
-folder (exactly as the README's per-question commands do).
+"""Run the test of both questions with the command:  python run_all_tests.py
 """
 
 import subprocess

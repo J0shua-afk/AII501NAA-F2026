@@ -1,7 +1,6 @@
 # Activity 3 – Answers
 
-All numbers come from the saved outputs of `linear_regression_taxi.ipynb` in this folder. Part 5 of the
-notebook was added for these questions and sets a random seed, so its numbers are repeatable; section 5.6
+All numbers come from the saved outputs of `linear_regression_taxi.ipynb` in this folder. Part 5 of the notebook was added for these questions and sets a random seed, so its numbers are repeatable; section 5.6
 lists the main ones in one place.
 
 ---
@@ -13,16 +12,14 @@ The **target** (label) is `FARE`, the cost of a taxi trip in dollars.
 The **input features** of my final model are:
 
 - `TRIP_MILES` – the distance of the trip.
-- `TRIP_MINUTES` – the length of the trip in minutes. This column is not in the dataset; it is
-  `TRIP_SECONDS / 60`. Minutes are used instead of seconds so the two features are on a similar scale.
+- `TRIP_MINUTES` – the length of the trip in minutes. But this column is not in the dataset, \
+ it is `TRIP_SECONDS / 60`, where minutes are used instead of seconds so the two features are on a similar scale.
 
 The notebook's first experiment uses `TRIP_MILES` alone. The working dataframe also keeps `COMPANY`,
 `PAYMENT_TYPE` and `TIP_RATE`, but they are only used for exploring the data and are not fed to the model.
 
-It is a **regression** problem because the thing being predicted is a continuous number. A fare can be
-$7.25 or $31.60 or anything in between, and being off by $1 is better than being off by $10. In a
-classification problem the model picks one of a fixed set of categories (for example cash vs. credit
-card), and there is no "close": the answer is either the right category or the wrong one.
+It is a `regression` problem because the thing being predicted is a continuous number. A fare can be $7.25 or $31.60 or anything in between, and being off by $1 is better than being off by $10. \
+In a classification problem the model picks one of a fixed set of categories (for example cash vs. credit card), and there is no **"close"**: the answer is either the right category or the wrong one.
 
 You can see it in what the model learned (section 5.2), which is an equation that turns the two features
 into a dollar amount:
@@ -36,8 +33,8 @@ is to hold some data back. In section 5.1 I use 80% of the trips (25,355) to tra
 as a test set that the model never sees while learning.
 
 If I tested on the training data, I would be checking the model against the same examples it adjusted its
-weights to fit. That score is optimistic: it shows how well the model fits those particular rows, not how
-well it generalises. A model that had simply memorised its training data would look perfect and then do
+weights to fit. It shows how well the model fits those particular rows, not how
+well it generalises (its being optimistic). A model that had simply memorised its training data would look perfect and then do
 badly on real trips, and I would have no way of noticing. It is like marking a student using the exact
 practice questions they already saw the answers to.
 

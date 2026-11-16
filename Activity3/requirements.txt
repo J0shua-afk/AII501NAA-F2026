@@ -1,6 +1,5 @@
 # Library versions this notebook was tested with, on Python 3.13.
-# They are the versions Google Colab provides (November 2026), so a local run
-# behaves the same as a Colab run.
+# They are the versions Google Colab provides (November 2026), so a local run behaves the same as a Colab run.
 google-ml-edu==0.1.3
 tensorflow==2.21.0
 keras==3.13.2

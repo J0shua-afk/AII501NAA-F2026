@@ -59,28 +59,20 @@ model actually minimises during training. Its square root, RMSE, brings it back 
 
 | Metric | Value |
 |---|---|
-| MAE | $1.18 |
-| MSE | 14.77 |
-| RMSE | $3.84 |
+| MSE | $14.7723 |
+| RMSE | $3.8435 |
+| MAE | $1.1763 |
 
 **In plain words: on average, my model's predicted fare is off by about $1.18.** The average fare in the
 test set is $24.54, so that is roughly 5% of a typical fare.
 
-Two things help put that number in context:
-
-- **Compared with not using a model.** Always guessing the average training fare ($23.75) for every trip
-  gives an MAE of $14.76. The model's error is more than 12 times smaller.
-- **The average hides two different situations.** Half of the test trips are predicted within $0.54, and
-  76.0% are within $1. The average is pulled up by a small number of big misses: 1.3% of test trips are
-  off by more than $10. That is also why the RMSE ($3.84) is more than three times the MAE ($1.18) –
-  squaring makes those few big misses count for a lot.
 
 ## 4. Look at the predicted vs. actual plot. Where does the model do well, and where does it struggle?
 
 The plot is in section 5.3, with a table of error by fare range and a table of the ten worst predictions
 under it.
 
-**Where it does well.** There is a dense band of points sitting right on the dashed "perfect prediction"
+**Where it does well:** There is a dense band of points sitting right on the dashed "perfect prediction"
 line from about $5 up to about $60. These are ordinary metered trips, where the fare really is close to
 a rate per mile plus a rate per minute. The table agrees:
 
@@ -165,19 +157,15 @@ and all three agree.
    $2.31, roughly six times less.
 
 Minutes is still worth keeping, since adding it brings the error down from $1.55 to $1.18. That fits how a
-taxi meter works: it charges for distance and also for time. The two features also overlap (their
-correlation in Part 2 is 0.80, because longer trips take longer), which is why minutes on its own still
-does much better than guessing the average.
+taxi meter works, it charges for distance and also for time.
 
 ## 7. What is the key difference between classification and regression? Give one real-world example of each from your own life.
 
-The difference is the **kind of output**. Classification predicts a **category** from a fixed set of
+**kind of output**. Classification predicts a **category** from a fixed set of
 options. Regression predicts a **number** on a continuous scale. That also changes how they are scored:
 classification is scored by how often the category is right (accuracy), regression by how far off the
 number is (MAE, MSE).
 
-> *The two examples below are placeholders – the question asks for examples from your own life, so
-> replace them if they are not true for you, then delete this note.*
 
 - **Classification:** my email's spam filter, which is also what I built in Activity 1. Every email gets
   one of two labels, spam or not spam.
@@ -189,15 +177,14 @@ number is (MAE, MSE).
 
 **Bad data**
 
-- The dataset is used exactly as provided, with no cleaning. Trips with a wrong distance or time (a meter
+- Assuming the dataset is used exactly as provided. Trips with a wrong distance or time (a meter
   left running, a GPS glitch, a typo) are learned from like any other trip, and MSE gives big outliers
   extra weight, so a few bad rows can pull the line.
 - My own results have an example. One of the ten worst test predictions is a 0.90-mile, 1-minute trip
   that was charged $59.75. Either that record is wrong or the fare was not a metered one. The model
   cannot tell which, and it was trained on rows like that too.
-- In use, the model trusts whatever miles and minutes it is given. A bad input gives a confident wrong fare.
-- It has no sanity limits. It is a straight line, so it will happily return a fare for a 0-minute trip
-  or a 500-mile trip.
+- In use, the model trusts whatever miles and minutes it is given. A bad input gives a wrong fare.
+- It will happily return a fare for a 0-minute trip or a 500-mile trip. It has no technical limits.
 
 **Bias**
 
